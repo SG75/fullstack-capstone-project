@@ -16,7 +16,7 @@ assignees: ''
 
 ###Acceptance Criteria
 
-gherkin
+
 Given [some content]
 When [certain action is taken]
 Then [the outcome of action is observed]
