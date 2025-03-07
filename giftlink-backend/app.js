@@ -5,6 +5,9 @@ const cors = require('cors');
 const pinoLogger = require('./logger');
 
 
+const router = express.Router(); // Initialize router
+
+
 const connectToDatabase = require('./models/db');
 const {loadData} = require("./util/import-mongo/index");
 
