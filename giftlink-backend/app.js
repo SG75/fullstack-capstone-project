@@ -4,7 +4,7 @@ const express = require('express');
 const cors = require('cors');
 const pinoLogger = require('./logger');
 import DetailsPage from './components/DetailsPage/DetailsPage';
-
+import SearchPage from './components/SearchPage/SearchPage';
 
 const router = express.Router(); // Initialize router
 
@@ -30,6 +30,7 @@ function App() {
           <Route path="/app/login" element={<LoginPage/>} />
           <Route path="/app/register" element={<RegisterPage />} />
           <Route path="/app/product/:productId" element={<DetailsPage/>} />
+          <Route path="/app/search" element={<SearchPage/>} />
         </Routes>
         </>
   );
