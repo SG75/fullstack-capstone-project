@@ -1,8 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import './DetailsPage.css';
-import {urlConfig} from '../../config';
-
 
 function DetailsPage() {
     const navigate = useNavigate();
@@ -15,15 +13,14 @@ function DetailsPage() {
         const authenticationToken = sessionStorage.getItem('auth-token');
         if (!authenticationToken) {
 			// Task 1: Check for authentication and redirect
-            navigate('/app/login')
+            navigate('/app/login');
         }
 
         // get the gift to be rendered on the details page
         const fetchGift = async () => {
             try {
 				// Task 2: Fetch gift details
-                const url = `${urlConfig.backendUrl}/api/gifts/${productId}`;
-                const response = await fetch(`${urlConfig.backendUrl}/api/gifts/${productId}`);
+                const response =`${urlConfig.backendUrl}/api/gifts/${productId}`
                 if (!response.ok) {
                     throw new Error('Network response was not ok');
                 }
@@ -39,14 +36,14 @@ function DetailsPage() {
         fetchGift();
 
 		// Task 3: Scroll to top on component mount
-		window.scrollTo(0, 0)
+		window.scrollTo(0, 0);
 
     }, [productId]);
 
 
     const handleBackClick = () => {
 		// Task 4: Handle back click
-		navigate(-1)
+        navigate(-1);
 	};
 
 	//The comments have been hardcoded for this project.
@@ -96,26 +93,26 @@ return (
                     </div>
                     // Task 6: Display gift details
                     	<p><strong>Category:</strong> 
-				{gift.category}
+                        {gift.category}
 			</p>
                     	<p><strong>Condition:</strong> 
-				{gift.condition}
+                        {gift.condition}
                     	</p>
                     	<p><strong>Date Added:</strong> 
-				{gift.dateAdded}
+                        {gift.dateAdded}
                         </p>
                     	<p><strong>Age (Years):</strong> 
-				{gift.age}
+                        {gift.age}
                     	</p>
                     	<p><strong>Description:</strong> 
-				{gift.description}
+                        {gift.description}
                     	</p>
                 </div>
             </div>
             <div className="comments-section mt-4">
                 <h3 className="mb-3">Comments</h3>
 				// Task 7: Render comments section by using the map function to go through all the comments
-				{comments.map((comment, index) => (
+				{{ insert code here }} => (
                     <div key={index} className="card mb-3">
                         <div className="card-body">
                             <p className="comment-author"><strong>{comment.author}:</strong></p>
