@@ -24,7 +24,7 @@ function RegisterPage() {
         try{
             const response = await fetch(`${urlConfig.backendUrl}/api/auth/register`, {
                  //{{Insert code here}} //Task 6: Set method
-                 method: 'POST'
+                 method: 'POST',
                  //{{Insert code here}} //Task 7: Set headers
                  headers: {
                     'content-type': 'application/json',
