@@ -6,7 +6,7 @@ import { useAppContext } from "../../context/AuthContext";
 export default function Navbar() {
   // const { isLoggedIn, setIsLoggedIn, userName, setUserName } = useAppContext();
   const { isLoggedIn, setIsLoggedIn, setUserName } = useAppContext();
-  const navigate = useNavigate();
+  // const navigate = useNavigate();
   useEffect(() => {
     const authTokenFromSession = sessionStorage.getItem("auth-token");
     const nameFromSession = sessionStorage.getItem("name");
