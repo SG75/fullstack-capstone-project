@@ -8,7 +8,8 @@ import "./LoginPage.css";
 function LoginPage() {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [incorrect, setIncorrect] = useState("");
+  // const [incorrect, setIncorrect] = useState("");
+  const [setIncorrect] = useState("");
   const navigate = useNavigate();
   const bearerToken = sessionStorage.getItem("bearer-token");
   const { setIsLoggedIn } = useAppContext();
