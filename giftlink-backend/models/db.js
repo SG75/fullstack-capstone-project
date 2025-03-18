@@ -16,12 +16,11 @@ async function connectToDatabase() {
     const client = new MongoClient(url);      
 
     // Task 1: Connect to MongoDB
-    await client.connect();
-    
+    await client.connect()
     // Task 2: Connect to database giftDB and store in variable dbInstance
     dbInstance = client.db(dbName);
-    //task 3:
-    return dbInstance    
+    // Task 3: Return database instance
+    return dbInstance
 }
 
 module.exports = connectToDatabase;
