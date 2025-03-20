@@ -32,6 +32,7 @@ export default function Navbar() {
     const profileSecton=()=>{
       navigate(`/app/profile`);
     }
+    
     return (
         <>
             <nav className="navbar navbar-expand-lg navbar-light bg-light" id='navbar_container'>
@@ -76,5 +77,6 @@ export default function Navbar() {
         </div>
       </nav>
         </>
-    )
-}
+        )
+    
+}   
