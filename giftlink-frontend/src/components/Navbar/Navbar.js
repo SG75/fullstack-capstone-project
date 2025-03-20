@@ -47,10 +47,10 @@ export default function Navbar() {
               <a className="nav-link" href="/home.html">Home</a> {/* Link to home.html */}
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/app">Gifts</Link> {/* Updated Link */}
+              <a className="nav-link" to="/app">Gifts</a> {/* Updated Link change link to a tag*/}
             </li>
             <li className="nav-item">
-              <Link className="nav-link" to="/app/search">Search</Link>
+              <a className="nav-link" to="/app/search">Search</a>
             </li>
             <ul className="navbar-nav ml-auto">
             {isLoggedIn ? (
