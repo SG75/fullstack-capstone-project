@@ -51,7 +51,7 @@ export default function Navbar() {
               <a className="nav-link" to="/app">Gifts</a> {/* Updated Link change link to "a" tag*/}
             </li>
             <li className="nav-item">
-              <a className="nav-link" to="/app/search">Search</a>
+              <Link className="nav-link" to="/app/search">Search</Link>
             </li>
             <ul className="navbar-nav ml-auto">
             {isLoggedIn ? (
