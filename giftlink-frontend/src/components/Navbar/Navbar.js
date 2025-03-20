@@ -48,7 +48,7 @@ export default function Navbar() {
               <a className="nav-link" href="/home.html">Home</a> {/* Link to home.html */}
             </li>
             <li className="nav-item">
-              <a className="nav-link" to="/app">Gifts</a> {/* Updated Link change link to a tag*/}
+              <a className="nav-link" to="/app">Gifts</a> {/* Updated Link change link to "a" tag*/}
             </li>
             <li className="nav-item">
               <a className="nav-link" to="/app/search">Search</a>
