@@ -62,10 +62,10 @@ export default function Navbar() {
                                     <>
                                         <li className="nav-item">
 
-                                        <Link className="nav-link login-btn" to="/app/login">Login</Link>
+                                        <a className="nav-link login-btn" to="/app/login">Login</a>
                                         </li>
                                         <li className="nav-item">
-                                        <Link className="nav-link register-btn" to="/app/register">Register</Link>
+                                        <a className="nav-link register-btn" to="/app/register">Register</a>
                                         </li>
                                     </>
                                 )
